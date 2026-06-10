@@ -1,7 +1,6 @@
 databases:
   - name: gscores-db
     databaseName: gscores
-    user: postgres
     plan: free
 
 services:
