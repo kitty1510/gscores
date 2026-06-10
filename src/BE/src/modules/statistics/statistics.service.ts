@@ -6,12 +6,12 @@ import { SubjectRegistry } from '../../subjects/subject.registry';
 import { ScoreLevel, SCORE_LEVEL_LABELS } from '../../subjects/base/score-level.enum';
 import { GroupASubjectGroup } from '../../subjects/groups/group-a.subject-group';
 
-interface LevelStat {
+export interface LevelStat {
   label: string;
   count: number;
 }
 
-interface SubjectDistribution {
+export interface SubjectDistribution {
   subject: string;
   dbField: string;
   levels: {
@@ -22,7 +22,7 @@ interface SubjectDistribution {
   };
 }
 
-interface Top10Student {
+export interface Top10Student {
   rank: number;
   sbd: string;
   toan: number;

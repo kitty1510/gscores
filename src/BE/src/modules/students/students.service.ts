@@ -5,13 +5,13 @@ import { Student } from './student.entity';
 import { SubjectRegistry } from '../../subjects/subject.registry';
 import { ScoreLevel } from '../../subjects/base/score-level.enum';
 
-interface ScoreEntry {
+export interface ScoreEntry {
   displayName: string;
   score: number | null;
   level: ScoreLevel | null;
 }
 
-interface StudentResult {
+export interface StudentResult {
   sbd: string;
   ma_ngoai_ngu: string | null;
   scores: Record<string, ScoreEntry>;

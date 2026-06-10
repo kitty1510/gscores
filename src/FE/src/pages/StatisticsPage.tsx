@@ -98,7 +98,7 @@ export function StatisticsPage() {
                       </span>
                     </div>
                     <div className="space-y-2.5">
-                      {LEVELS.map(({ key, label, color, bg }) => {
+                      {LEVELS.map(({ key, label, color }) => {
                         const lv = subject.levels[key as keyof typeof subject.levels];
                         const pct = total > 0 ? (lv.count / total) * 100 : 0;
                         return (
