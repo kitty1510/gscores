@@ -1,10 +1,7 @@
 import axios from 'axios';
 import type { StudentResult, SubjectDistribution, Top10Student } from '../types';
 
-const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL ?? '/api',
-  timeout: 10_000,
-});
+const api = axios.create({ baseURL: '/api', timeout: 10_000 });
 
 export const searchStudent = async (sbd: string): Promise<StudentResult> => {
   const { data } = await api.get<StudentResult>('/students/search', { params: { sbd } });
