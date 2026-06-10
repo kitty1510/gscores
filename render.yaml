@@ -7,7 +7,6 @@ services:
   - type: web
     name: gscores-backend
     env: node
-    plan: free
     rootDir: src/BE
     buildCommand: npm install && npm run build
     startCommand: >-
@@ -47,7 +46,6 @@ services:
   - type: web
     name: gscores-frontend
     env: static
-    plan: free
     rootDir: src/FE
     buildCommand: npm install && npm run build
     staticPublishPath: dist
