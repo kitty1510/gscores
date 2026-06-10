@@ -41,6 +41,8 @@ services:
     build:
       context: ./src/FE
       dockerfile: Dockerfile
+      args:
+        VITE_API_URL: http://localhost:3000/api
     ports:
       - '80:80'
     depends_on:
